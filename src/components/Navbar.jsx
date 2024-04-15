@@ -20,12 +20,13 @@ const Navbar = () => {
         <Image
           src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
           alt=""
-          mt={20}
+          mt={4}
+          ml={10}
           style={{ width: "175px" }}
         />
       </Box>
       <Flex align="center" w="45%" h="70px" textAlign="center" position="relative">
-        <IoSearch style={{ position: "absolute", left: "10px", top: "50%", transform: "translateY(-50%)", fontSize: "26px", color: "#666666" }} />
+        <IoSearch style={{ position: "absolute", left: "10px", top: "50%", transform: "translateY(-50%)",marginRight:"5px", fontSize: "26px", color: "#666666" ,zIndex:"1000"}} />
         <Input
           type="text"
           placeholder="Search for Products, Brands and More"
@@ -57,7 +58,7 @@ const Navbar = () => {
           >
             Login
           </Text>
-          <Icon as={FaAngleDown} boxSize={10} color="gray.600" />
+          <Icon as={FaAngleDown} boxSize={5} color="gray.600" />
         </Stack>
         <Stack direction="row" align="center" spacing={2} style={{ width: "80px", height: "46px", display: "flex", alignItems: "center", justifyContent: "space-around", padding: "4px 8px", borderRadius: "8px", cursor: "pointer", transition: "all 0.1s ease-in" }}>
           <Icon as={IoCartOutline} boxSize={25} color="gray.600" />
@@ -65,7 +66,7 @@ const Navbar = () => {
             Cart
           </Text>
         </Stack>
-        <Stack direction="row" align="center" spacing={2} style={{ width: "140px", height: "46px", display: "flex", alignItems: "center", justifyContent: "space-between", borderRadius: "8px", cursor: "pointer", transition: "all 0.1s ease-in" }}>
+        <Stack direction="row" align="center" spacing={2} style={{ width: "170px", height: "46px", display: "flex", alignItems: "center", justifyContent: "space-between", borderRadius: "8px", cursor: "pointer", transition: "all 0.1s ease-in" }}>
           <Image src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" alt="" boxSize={25} />
           <Text fontSize="lg" fontWeight="medium" color="gray.600">
             Become a Seller
@@ -92,8 +93,8 @@ const Navbar = () => {
 
 const MenuItem = ({ iconUrl, text }) => (
   <Flex align="center" py={2} px={4} _hover={{ bg: "gray.100" }} style={{ width: "100%", cursor: "pointer", display: "flex", alignItems: "center", fontFamily: "Roboto, sans-serif", fontWeight: "400", fontSize: "15px" }}>
-    <Image src={iconUrl} alt="" boxSize={20} mr={10} />
-    <Text fontSize="md" fontWeight="medium" color="gray.600">
+    <Image src={iconUrl} alt="" boxSize={8} mr={2} />
+    <Text fontSize="sm" fontWeight="medium" color="gray.600" w="auto">
       {text}
     </Text>
   </Flex>

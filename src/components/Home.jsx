@@ -23,8 +23,7 @@ const Home = () => {
     <Box overflowX="hidden" p={0} m={0}>
     
       <Box w="100vw" h="800px"  p={0} m={0} bg="#f1f2f4" mt="74px" overflowX="hidden">
-        <Box width="98%" mx="auto"> 
-        <Flex width="98%"  justify="center"  bg="white" mx="20px" mb="27px" pos="relative" top="10px" right={20}>
+        <Flex width="96%"  justify="center"  bg="white" mx="20px" mb="27px" pos="relative" top="10px">
             <ProductDiv imgSrc="https://rukminim2.flixcart.com/flap/70/70/image/29327f40e9c4d26b.png?q=100" name="Grocery" />
             <ProductDiv imgSrc="https://rukminim2.flixcart.com/flap/70/70/image/22fddf3c7da4c4f4.png?q=100" name="Mobiles" />
             <ProductDivWithArrow imgSrc="https://rukminim2.flixcart.com/fk-p-flap/70/70/image/0d75b34f7d8fbcb3.png?q=100" name="Fashion" />
@@ -35,7 +34,6 @@ const Home = () => {
             <ProductDivWithArrow imgSrc="https://rukminim2.flixcart.com/flap/70/70/image/dff3f7adcf3a90c6.png?q=100" name="Beauty & Toys" />
             <ProductDivWithArrow imgSrc="https://rukminim2.flixcart.com/fk-p-flap/70/70/image/05d708653beff580.png?q=100" name="Two Wheelers" />
         </Flex>
-        </Box>
 
         <Slider1 />
 

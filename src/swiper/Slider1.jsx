@@ -5,7 +5,7 @@ import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 
 const Slider1 = () => {
     return (
-    <Box width="95%" mx="auto" pr={25}>
+    <Box width="97%" mx="10px">
       <Swiper 
         autoplay={{
           delay: 2500,
